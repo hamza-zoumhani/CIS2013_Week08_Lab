@@ -1,6 +1,26 @@
 #include <iostream>
 #include <string>
-using namespace std;
+#include "dice.cpp"
+
+/* int main(){
+	cout << "Create the dice" << endl;
+	dice d6;
+	dice d8;
+	d8.setNumberOfSides(8);
+	cout << "Roll the dice" << endl;
+	cout << "	The dice rolls a " << d6.roll() << endl;
+	cout << "	The dice rolls a " << d8.roll() << endl;
+	
+	return 0;
+} */
+
+
+
+
+
+
+
+
 
 
 class Cat{
@@ -16,15 +36,17 @@ class Cat{
 };
 
 void newCat(Cat cougar){
-	cougar.siee = 62;
+	cougar.size = 62;
 	cougar.breed = "cougar";
 	cougar.roar();
 	
 }
 
 int main(){
+	Cat c;
+	newCat(c);
 	
-	newCat();
+	c.roar();
 	
 	Cat tiger;
 	Cat house;
@@ -38,6 +60,14 @@ int main(){
 	house.breed = "house";
 	house.size = 33;
 	house.roar();
+	
+	cout << "Create the dice" << endl;
+	dice d6;
+	dice d8;
+	d8.setNumberOfSides(8);
+	cout << "Roll the dice" << endl;
+	cout << "	The dice rolls a " << d6.roll() << endl;
+	cout << "	The dice rolls a " << d8.roll() << endl;
 	
 	return 0;
 }
